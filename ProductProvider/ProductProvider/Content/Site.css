@@ -1,0 +1,63 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/***CSS propios para la pagina***/
+.indexBtn {
+    width: 100%;
+    height: 60px;
+    border: black solid 1px;
+    padding-top: 19px;
+    padding-left: 40%;
+    margin-top: 10px;
+    float:left;
+}
+
+.indexBtn a{
+    text-decoration:none;
+    color: #FFF;
+    font-size:larger;
+} 
+
+.indexBtn.link{
+    width:100%;
+    height:100%;
+}
+
+.productsBtn{
+    text-decoration:none;
+    background-color:#5e0389;
+}
+
+.providerBtn{
+
+    background-color:#ff6a00;
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

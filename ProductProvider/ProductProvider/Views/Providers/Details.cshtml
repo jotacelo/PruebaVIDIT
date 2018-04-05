@@ -1,0 +1,50 @@
+﻿@model ProductProvider.ViewModels.ProviderViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProviderViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameProvider)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameProvider)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressProvider)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressProvider)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAviable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAviable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdProvider }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

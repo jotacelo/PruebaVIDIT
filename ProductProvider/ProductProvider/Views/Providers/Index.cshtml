@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProductProvider.ViewModels.ProviderViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a href="@Url.Action("Create", "Products")" class="btn btn-primary">
+        Create New
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+    </a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NameProvider)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressProvider)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsAviable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Website)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameProvider)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressProvider)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsAviable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Website)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdProvider }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdProvider }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdProvider })
+        </td>
+    </tr>
+}
+
+</table>

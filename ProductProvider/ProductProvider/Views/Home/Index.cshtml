@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div class="jumbotron">
+    <h3>System for Products and Providers</h3>
+        <h4>List of requirements</h4>
+    <ul>
+        <li>List, create, edit and delete the contents of a Products table.</li>
+        <li>List, create, edit and delete the contents of a Providers table. Each provider have 1 or more products. Each product can have 1  or more providers.</li>
+        <li>You define the fields of each table.</li>
+        <li>Use MS SQL server.
+    </ul>
+    <h4>Links</h4>
+    <a href="#">Git</a>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="indexBtn productsBtn">
+                <a href="~/Products/">
+                        <span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> Products
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="indexBtn providerBtn">
+                <a href="~/Providers/">
+                    <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Providers
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
