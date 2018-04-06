@@ -28,7 +28,6 @@ namespace ProductProvider.Models
         public string upc { get; set; }
         public int quantity { get; set; }
         public bool isAvailable { get; set; }
-        public string urlImage { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Provider> Provider { get; set; }

@@ -13,7 +13,6 @@
           <Property Name="nameProduct" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="listPrice" Type="money" Nullable="false" />
           <Property Name="color" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="urlImage" Type="varchar" MaxLength="100" />
           <Property Name="sku" Type="varchar" MaxLength="50" />
           <Property Name="upc" Type="varchar" MaxLength="12" />
           <Property Name="quantity" Type="int" Nullable="false" />
@@ -59,7 +58,6 @@
           <Property Name="quantity" Type="Int32" Nullable="false" />
           <Property Name="isAvailable" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Provider" Relationship="Self.ProductProvider" FromRole="Product" ToRole="Provider" />
-          <Property Name="urlImage" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Provider">
           <Key>
@@ -93,7 +91,6 @@
           <EntitySetMapping Name="Product">
             <EntityTypeMapping TypeName="ProductProviderModel.Product">
               <MappingFragment StoreEntitySet="Product">
-                <ScalarProperty Name="urlImage" ColumnName="urlImage" />
                 <ScalarProperty Name="idProduct" ColumnName="idProduct" />
                 <ScalarProperty Name="nameProduct" ColumnName="nameProduct" />
                 <ScalarProperty Name="listPrice" ColumnName="listPrice" />
